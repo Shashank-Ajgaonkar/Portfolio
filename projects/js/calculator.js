@@ -22,5 +22,5 @@ function calculate() {
 
 // to return back to the portfolio page
 function portfolio() {
-  window.location.href = "/my-portfolio/index.html#portfolio";
+  window.location.href = "/index.html#portfolio";
 }
