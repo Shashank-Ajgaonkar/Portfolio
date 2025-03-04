@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+
+      body {
+        background-color: rgb(4, 59, 75);
+      }
+
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+        background-color: orangered;
+        color: aliceblue;
+      }
+
+      .d {
+        background-color:rgb(202, 175, 133);
+        padding: 5px;
+        margin: 5px;
+      }
+
+      .d1 {
+        background-color: rgb(16, 233, 153);
+        padding: 5px;
+        margin: 5px;
+      }
+
+      #portfolio {
+        margin-left: 43%;
+        margin-top: 20px;
+        font-size: medium;
+        font-weight: bold;
+        width: 9rem;
+        height: 2rem;
+        border-radius: 15px;
+        background-color:rgb(86, 223, 97);
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>HTML Cheat Sheet</h1>
+
+    <details class="d">
+      <summary>Introduction to HTML</summary>
+      <ul>
+        <details class="d1">
+          <summary><u>What is HTML?</u></summary><br>
+          <ul>
+            <li><b>HTML</b> stands for <b>Hyper Text Markup Language</b>.</li><br>
+            <li>HTML is the standard markup language for creating Web pages.</li><br>
+            <li><b>HTML</b> describes the <b>structure</b> of a Web page.</li><br>
+            <li>HTML consists of a series of elements.E.g: head,body,p,img etc.</li><br>
+            <li>HTML elements tell the browser how to display the content.</li><br>
+            <li>The HTML elements are NOT case sensitive.</li><br>
+            <li>Your web browser (e.g. Chrome,Safari, etc.) can read HTML code 
+              and translate it into web pages.</li><br>
+          </ul>
+        </details>
+
+        <details class="d1">
+          <summary><u>What is an HTML element?</u></summary><br>
+          <ul>
+            <li>
+              An HTML element is defined by an opening tag, some content, and a closing tag.<br><br>
+              <ul><u>For example:</u><br>
+                <li>Look at the following code block. <br>
+                <img src="/my-portfolio/assets/htmlelement.png" width="9%"></li>
+                <li>Here, <b>h1</b> in the angular brackets < > is the <b>opening tag</b>.</li>
+                <li>Next comes the <b>content</b>. In this case it is <b>"Hello"</b>.</li>
+                <li>Finally, the <b>h1</b> element is closed using < / > which represent the <b>closing tag</b>.</li>
+                <li><b><u>Note:</u></b> There are some tags that do not close and are called <b>empty</b> or <b>void</b> tags. E.g: br, img, input etc.</li><br><br>
+              </ul>
+            </li>
+          </ul>
+        </details>
+
+        <details class="d1">
+          <summary><u>What is an HTML attribute?</u></summary><br>
+          <ul>
+            <li>All HTML elements can have attributes.</li><br>
+            <li>Attributes provide additional information about elements.</li><br>
+            <li>Attributes are always specified in the opening tag.</li><br>
+            <ul><u>For example:</u><br>
+              <li>Look at the following code block.<br><br>
+                <img src="/my-portfolio//assets/htmlattribute.png" width="12%"></li>
+              <li>Here the opening tag of the <b>body</b> element contains
+                 the <b>bgcolor</b> attribute which sets the background of the web page to <b>cyan</b>.</li><br>
+            </ul>
+          </ul>
+        </details>
+
+        <details class="d1">
+          <summary><u>HTML syntax</u></summary><br>
+          <ul>
+            <li>The standards and best practices are needed to make:
+              <ol>
+                <li>web pages compatible with different browser and devices.</li>
+                <li>teamwork and collaboration more effective.</li>
+              </ol><br>
+            <li>Indentation is considered a good practice to improve code readibility.<br>
+            <b>Indentation</b> is the <b>spaces</b> at the beginning of lines.</li><br>
+            </li>
+
+            <ul>
+              <li><u>!doctype declaration</u></li>
+              <ol>
+                <li>All HTML documents must start with a !DOCTYPE declaration.</li>
+                <li>The declaration is not an HTML tag.</li>
+                <li>It is an information to the browser about what document type to expect.</li>
+                <li>The !DOCTYPE declaration is NOT case sensitive.</li><br>
+              </ol>
+            </ul>
+
+            <ul>
+              <li><u>html tag</u></li>
+              <ol>
+                <li>The html tag represents the root of an HTML document.</li>
+                <li>The html tag is the container for all other HTML elements (except for the !DOCTYPE tag).</li>
+              </ol>
+            </ul>
+
+            <ul>
+              <li><u>head tag</u></li>
+              <ol>
+                <li>The head tag needs to be places before the body tag.</li>
+                <li>The head tag is used to include technical information about the web page.</li>
+                <li>The information in the head tag is not displayed on the web page. Only
+                  the title is shown in search engine result (e.g. Google) and the browser tab.
+                </li><br>
+              </ol>
+            </ul>
+
+            <ul>
+              <li><u>body tag</u></li>
+              <ol>
+                <li>The body tag defines the document's body.</li>
+                <li>The body element contains all the contents of an HTML document,
+                   such as headings, paragraphs, images, hyperlinks, tables, lists etc.</li>
+                <li>Note: There can only be <i>one</i> <b>body</b> element in an HTML document.</li><br>
+              </ol>
+            </ul>
+            <li>A typical html syntax will look like this:<br><br>
+              <img src="/my-portfolio/assets/htmlsyntax.png" width="13%">
+            </li>
+          </ul>
+        </details>
+
+      </ul>
+    </details>
+
+    
+    <details class="d">
+      <summary>HTML Basic</summary>
+      <ul>
+
+        <details class="d1">
+          <summary><u>Text formatting tags</u></summary><br><br>
+          <ol>
+            <li>The <b>p</b> tag defines a paragraph.</li><br>
+            <li>Browsers automatically add a single blank line before and after each <b>p</b> element.</li><br>
+            <li>The <b>br</b> tag inserts a single line break.</li><br>
+            <li>The <b>br</b> tag is an empty tag which means that it has no end tag.</li><br>
+            <li>Use the <b>br</b> tag to enter line breaks, not to add space between paragraphs.</li><br>
+            <li>The <b>b</b> tag specifies bold text without any extra importance.</li><br>
+            <li>The <b>i</b> tag defines a part of text in an alternate voice or mood.
+               The content inside is typically displayed in italic.</li><br>
+            <li>The <b>u</b> tag represents some text that is unarticulated and styled differently from normal text.
+              The content inside is typically displayed with an underline.</li><br>
+            <li>The <b>sub</b> tag defines subscript text. Subscript text appears half a character below the normal line,<br>
+               and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H<sub>2</sub>O.</li><br>
+            <li>The <b>sup</b> tag defines superscript text. Superscript text appears half a character above the normal line,<br>
+               and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like 2<sup>2</sup>= 4.</li><br>
+            <li>For reference:<br><br>
+              <img src="/my-portfolio/assets/textformatcode.png" width="40%"> <img src="/my-portfolio/assets/textformatoutput.png" width="40%" style="border: solid;">
+            </li><br>
+          </ol>
+        </details>
+
+        <details class="d1">
+          <summary><u>Headings tags</u></summary><br><br>
+          <ol>
+            <li>The text on web pages can be organized in different sections with headings.</li><br>
+            <li>Headings in HTML come in different levels. h1 defines the most important heading.</li><br>
+            <li>You can use up to 6 levels of headings in HTML. The tags for these heading elements are h1 to h6.</li><br>
+            <li>Headings are another element that requires both opening and closing container tags.</li><br>
+            <li>You can add different headings to your page to organize the content.<br>
+               h1 is usually styled with the largest font and h6 with the smallest in order.</li><br>
+            <li>You should only have one level 1 heading per page. Heading levels need to be used in correct order<br> i.e. 
+              after your h1 you can use as many h2s as you need, after each h2 you can include h3 and so on.
+            </li><br>
+            <li>For reference:<br>
+              <img src="/my-portfolio/assets/heading1.png" width="14%"> <img src="/my-portfolio/assets/heading2.png" width="10%" style="border: solid 2px;">
+            </li><br>
+          </ol>
+        </details>
+  
+        <details class="d1">
+          <summary><u>Anchor and image tags</u></summary><br><br>
+          <ol>
+            <li>The <b>a</b> tag or <b>anchor</b> tag defines a hyperlink, which is used to link from one page to another.</li><br>
+            <li>The most important attribute of the <b>a</b> element is the <b>href</b> attribute, which indicates the link's destination.</li><br>
+            <li>A linked page is normally displayed in the current browser window, unless you specify another target.</li><br>
+            <li>For reference:<br><br>
+              <b>This opens up google in your web browser.</b><br><img src="/my-portfolio/assets/anchor_tag.png" width="25%"><br>
+            </li><br>
+            <li>The <b>img</b> tag is used to embed an image in an HTML page.</li><br>
+            <li>Images are not technically inserted into a web page; images are linked to web pages. The img tag creates a holding space for the referenced image.</li><br>
+            <li>The img tag has two required attributes:
+              <ul>
+                <li>src - Specifies the path to the image.</li>
+                <li>alt (optional) - Specifies an alternate text for the image, if the image for some reason cannot be displayed.</li>
+              </ul>
+            </li><br>
+            <li>For reference:<br><br>
+              <img src="/my-portfolio/assets/imagetag.png" width="35%"><br><img src="/my-portfolio/assets/Tom and Jerry.png" width="16%">
+            </li><br>
+          </ol>
+        </details>
+        
+        <details class="d1">
+          <summary><u>Image mapping and marquee</u></summary><br><br>
+          <ol>
+            <li>The map tag is used to define an image map. An image map is an image with clickable areas.</li><br>
+            <li>The required <b>name</b> attribute of the <b>map</b> element is associated with the <b>img</b> tag's <b>usemap</b> attribute and creates a relationship between the image and the map.</li><br>
+            <li>The <b>map</b> element contains a number of <b>area</b> elements, that defines the clickable areas in the image map.</li><br>
+            <li>Some of the important attribute in area tag are:
+              <ul>
+                <li>shape - Specifies the shape of the clickable area. The shape can be default,rect,circle,poly.</li>
+                <li>coords - Specifies the coordinates of the area.</li>
+                <li>href - Specifies the hyperlink target for the area.</li>
+                <li>target - Specifies where to open the target URL.</li><br>
+              </ul>
+            <li>For reference:<br><br>
+              <img src="/my-portfolio/assets/imagemapcode.png" width="50%"><br>
+              <iframe src="/my-portfolio/projects/html/jerryimagemap.html" height="300px" width="240px" target="link"></iframe>
+              <iframe name="link" height="300px" width="240px" src="/my-portfolio/projects/html/fright.html"></iframe>
+            </li><br>
+            </li>
+            <li>The marquee tag is a container tag of HTML that is implemented for creating scrollable text or images within a web page from either left to right or top to bottom.</li><br>
+            <li>Some of the important attribute in the marquee tag are:
+              <ul>
+                <li>direction - provides the direction or way in which your marquee will allow you to scroll.
+                    The value of this attribute can be: left, right, up, or down.</li>
+                <li>scrollamount - provides value for speeding the marquee feature.</li>
+                <li>scrolldelay - provides a feature whose value will be used for delaying each jump.</li>
+                <li>behavior - provides the scrolling type in a marquee.
+                   That scrolling can be like sliding, scrolling, or alternate.</li>
+                <li>loop - provides how many times the marquee will loop.</li>
+              </ul>
+            </li><br>
+            <li>For reference:<br><br>
+              <img src="/my-portfolio/assets/marqueecode.png" width="50%"><br>
+              Output:<br>
+              <video src="/my-portfolio/assets/marqueetag.mp4" width="50%" autoplay loop style="border: solid;"></video>
+            </li><br>
+          </ol>
+        </details>
+
+        <details class="d1">
+          <summary><u>List</u></summary><br><br>
+          <ol>
+            <li>HTML lists allow web developers to group a set of related items in lists.</li><br>
+            <li><ol type="i">
+              They are of three types:<br><br>
+                  <li>
+                    <ul><u>Unordered List:</u><br><br>
+                      <li>An unordered list starts with the <b>ul</b> tag. Each list item starts with the <b>li</b> tag.</li><br>
+                      <li>The list items will be marked with <b>bullets</b> (small black circles) by default.</li><br>
+                      <li>For reference:<br><br>
+                      <img src="/my-portfolio/assets/unorderlistcode.png" width="15%"> <img src="/my-portfolio/assets/unorderlistoutput.png" style="border: solid;">
+                      </li><br>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <ul><u>Ordered List:</u><br><br>
+                      <li>An ordered list starts with the <b>ol</b> tag. Each list item starts with the <b>li</b> tag.</li><br>
+                      <li>The list items will be marked with <b>numbers</b> by default.</li><br>
+                      <li>For reference:<br><br>
+                        <img src="/my-portfolio/assets/orderedlistcode.png" width="15%"> <img src="/my-portfolio/assets/orderedlistoutput.png" style="border: solid;">
+                      </li><br>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <ul><u>Description List:</u><br><br>
+                      <li>A description list is a list of terms, with a description of each term.</li><br>
+                      <li>The <b>dl</b> tag defines the description list, the <b>dt</b> tag defines the term (name), and the <b>dd</b> tag describes each term.</li><br>
+                      <li>For reference:<br><br>
+                        <img src="/my-portfolio/assets/discriptionlistcode.png" width="20%"> <img src="/my-portfolio/assets/discriptionlistoutput.png" style="border: solid;">
+                      </li><br>
+                  </li>
+                </ol>
+            </li>
+          </ol>
+        </details>
+      </ul>
+    </details>
+
+    <details class="d">
+      <summary>Advance HTML</summary>
+      <ul>
+
+        <details class="d1">
+          <summary><u>Table</u></summary><br>
+          <ol>
+            <li>HTML tables allow web developers to arrange data into rows and columns.</li><br>
+            <li>A table in HTML consists of table cells inside rows and columns.</li><br>
+            <li>Each table cell is defined by a <b>td</b> container tag. <b>td</b> stands for table data.</li><br>
+            <li>Each table row starts with a <b>tr</b> container tag. <b>tr</b> stands for table row.</li><br>
+            <li>If you want your cells to be table header cells.
+               In those cases use the <b>th</b> tag instead of the <b>td</b> tag. <b>th</b> stands for table header.</li><br>
+            <li>By default, the text in <b>th</b> elements are <i>bold</i> and <i>centered</i>, but you can change that with CSS.</li><br>
+            <li>
+              <ul>Two important attributes in table are:<br><br>
+                <li><b>Cell Padding</b> - Cell padding is the space between the cell edges and the cell content.
+                  By default the padding is set to 0.
+                </li><br>
+                <li><b>Cell Spacing</b> - Cell spacing is the space between each cell.
+                  By default the space is set to 2 pixels.
+                </li><br>
+              </ul>
+            </li><br>
+            <li>For reference:<br><br>
+              <img src="/my-portfolio/assets/tablecode.png" width="50%"> <img src="/my-portfolio/assets/tableoutput.png">
+            </li><br>
+          </ol>
+        </details>
+
+        <details class="d1">
+          <summary><u>Form</u></summary><br><br>
+          <ol>
+            <li>The <b>form</b> tag is used to create an HTML form for user input.</li><br>
+            <li><ol type="i">The form element can contain one or more of the following form elements:<br><br>
+                <li>
+
+                  <ul><u>input tag</u>:<br><br>
+                    <li>The <b>input</b> tag specifies an input field where the user can enter data.</li><br>
+                    <li>The input element is the most important form element.</li><br>
+                    <li>The input element can be displayed in several ways, depending on the type attribute.<br>
+                      Some of the <i>type</i> being <b>button,checkbox,radio,date,range,email,password,text(default value)</b> etc.</li><br>
+                  </ul>
+                </li><br>
+
+                <li>
+                  <ul><u>textarea tag</u>:<br><br>
+                    <li>The <b>textarea</b> tag defines a multi-line text input control.</li><br>
+                    <li>The textarea element is often used in a form, to collect user inputs like comments or reviews.</li><br>
+                    <li>A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).</li><br>
+                    <li>The size of a text area is specified by the <b>cols</b> and <b>rows</b> attributes (or with CSS).</li><br>
+                    <li>The <b>name</b> attribute is needed to reference the form data after the form is submitted<br>
+                       (if you omit the name attribute, no data from the text area will be submitted).</li><br>
+                    <li>The <b>id</b> attribute is needed to associate the text area with a <b>label</b>.</li><br>
+                  </ul>
+                </li><br>
+
+                <li>
+                  <ul><u>select tag</u>:<br><br>
+                    <li>The <b>select</b> element is used to create a drop-down list.</li><br>
+                    <li>The <b>select</b> element is most often used in a form, to collect user input.</li><br>
+                    <li>The <b>name</b> attribute is needed to reference the form data after the form is submitted<br>
+                       (if you omit the name attribute, no data from the drop-down list will be submitted).</li><br>
+                    <li>The <b>id</b> attribute is needed to associate the drop-down list with a label.</li><br>
+                    <li>The <b>option</b> tags inside the <b>select</b> element define the available options in the drop-down list.</li><br>
+                  </ul>
+                </li><br>
+
+                <li>
+                  <ul><u>option tag</u>:<br><br>
+                    <li>The <b>option</b> tag defines an option in a select list.</li><br>
+                    <li>The <b>option</b> tag can be used without any attributes, but you usually need the value attribute,<br>
+                       which indicates what is sent to the server on form submission.</li><br>
+                    <li>
+                      <p>For reference:</p><br>
+                      <img src="/my-portfolio/assets/selectoptioncode.png" width="25%"> <img src="/my-portfolio/assets/selectoptionoutput.png" width="25%" style="border: solid;">
+                    </li><br>
+                  </ul>
+                </li><br>
+
+                <li>
+                  <ul><u>fieldset tag</u>:<br><br>
+                    <li>The <b>fieldset</b> tag is used to group related elements in a form.</li><br>
+                    <li>The <b>fieldset</b> tag draws a box around the related elements.</li><br>
+                    <li>The <b>legend</b> tag defines a caption for the <b>fieldset</b> element.</li><br>
+                  </ul>
+                </li><br>
+
+                <li>
+                  <ul><u>label tag</u>:<br><br>
+                    <li>The <b>label</b> tag defines a label for several elements.</li><br>
+                    <li>A label can also be bound to an element by placing the element inside the <b>label</b> element.</li><br>
+                    <li>The <b>for</b> attribute of <b>label</b> must be equal to the <b>id</b> attribute of the related element to bind them together.</li><br>
+                    <li>
+                      <ol type="a">Proper use of labels with the elements above will benefit:<br><br>
+                        <li><b>Screen reader</b> users (will read out loud the label, when the user is focused on the element).</li><br>
+                        <li>Users who have difficulty clicking on very small regions (such as checkboxes) - <br>because when a user clicks the text within the <b>label</b> element, it toggles the input (this increases the hit area).</li><br>
+                      </ol>
+                    </li><br>
+                </li><br>
+              </ol>
+            </li><br>
+            <li>For reference:<br><br>
+              <img src="/my-portfolio/assets/formcode.png" width="52%"> <img src="/my-portfolio/assets/formoutput.png" width="32%" style="border: solid;">
+            </li><br>
+          </ol>
+        </details>
+
+        <details class="d1">
+          <summary><u>Audio / Video</u></summary><br><br>
+          <ol>
+            <li>
+              <ul><u>Audio tag</u>:<br><br>
+                <li>The <b>audio</b> tag is used to embed sound content in a document, such as music or other audio streams.</li><br>
+                <li>The <b>audio</b> tag contains one or more <b>source</b> tags with different audio sources.
+                   The browser will choose the first source it supports.</li><br>
+                <li>The text between the opening and closing <b>audio</b> tags will only be displayed in browsers that do not support the <b>audio</b> element.</li><br>
+                <li>There are three supported audio formats in HTML: <b>MP3, WAV, and OGG</b>.</li><br>
+              </ul>
+            </li><br>
+
+            <li>
+              <ul><u>Video tag</u>:<br><br>
+                <li>The <b>video</b> tag is used to embed video content in a document, such as a movie clip or other video streams.</li><br>
+                <li>Similar to <b>audio</b> tag, the <b>video</b> tag can contain multiple <b>source</b> tags and the browser will choose the first source it supports,<br>
+                    and will display any content it has if the browser does not support the <b>video</b> element.</li><br>
+                <li>There are three supported video formats in HTML: <b>MP4, WebM, and OGG</b>.</li><br>
+                <li>For reference:<br><br>
+                  <img src="/my-portfolio/assets/videocode.png" width="30%"> <video src="/my-portfolio/assets/business-analyst.mp4" width="300px" controls style="border: solid;"></video>
+                </li><br>
+              </ul>
+            </li><br>
+          </ol>
+        </details>
+
+        <details class="d1">
+          <summary><u>Inline and Block elements</u></summary><br><br>
+          <ol>
+            <li>Every HTML element has a default display value, depending on what type of element it is.</li><br>
+            <li>The two most common display values are block and inline.</li><br>
+            <li>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.</li><br>
+            <li>A block-level element always takes up the full width available (stretches out to the left and right as far as it can).</li><br>
+            <li>The commonly used block elements are: <b>p, div, form, ul, ol, video, table</b> etc.</li><br>
+            <li>An inline element does not start on a new line.</li><br>
+            <li>An inline element only takes up as much width as necessary.</li><br>
+            <li>An inline element cannot contain a block-level element.</li><br>
+            <li>The commonly used inline elements are: <b>a, br, i, img, sub, sup, input, map, label, span</b> etc.</li><br>
+          </ol>
+        </details>
+
+        <details class="d1">
+          <summary><u>Div and span elements</u></summary><br><br>
+          <ol>
+            <li>The <b>div</b> element is often used as a container for other HTML elements.</li><br>
+            <li>The <b>div</b> element has no required attributes, but style, class and id are common.</li><br>
+            <li>When used together with CSS, the <b>div</b> element can be used to style blocks of content.</li><br>
+            <li>The <b>span</b> element is an inline container used to mark up a part of a text, or a part of a document.</li><br>
+            <li>The <b>span</b> element just like <b>div</b> element has no required attributes, but style, class and id are common.</li><br>
+            <li>When used together with CSS, the <b>span</b> element can be used to style parts of the text.</li><br>
+            <li>For reference:<br><br>
+              <img src="/my-portfolio/assets/inline-blockcode.png" width="40%"> <img src="/my-portfolio/assets/inline-blockoutput.png" width="40%" style="border: solid;">
+            </li><br>
+          </ol>
+        </details>
+
+      </ul>
+    </details>
+
+    <button id = "portfolio" onclick="mainPage()">Back to Portfolio</button>
+
+    <script>
+      function mainPage()
+      {
+        window.location.href = "/my-portfolio/index.html#portfolio";
+      }
+    </script>
+    
+  </body>
+</html>

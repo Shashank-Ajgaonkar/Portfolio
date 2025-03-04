@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background-color: aqua;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#game {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.btn {
+  height: 5rem;
+  width: 5rem;
+  font-size: 3rem;
+  cursor: pointer;
+  background-color: bisque;
+}
+
+#pid,
+#turn {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(5, 5, 28);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#reset-game {
+  font-weight:bold;
+  background-color: rgb(93, 93, 232);
+  height: 2rem;
+  width: 6rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#portfolio {
+  font-weight: bold;
+  background-color: rgb(219, 71, 71);
+  border-radius: 20px;
+  padding:6px;
+  cursor: pointer;
+}
+ 
