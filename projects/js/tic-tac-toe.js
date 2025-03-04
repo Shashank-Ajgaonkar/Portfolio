@@ -71,5 +71,5 @@ function resetGame() {
 
 // this function results back to the portfolio page
 function portfolio() {
-  window.location.href = "./index.html#portfolio";
+  window.location.href = "/index.html#portfolio";
 }
